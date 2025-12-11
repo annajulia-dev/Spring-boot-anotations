@@ -1,4 +1,4 @@
-package stereotype_annotation;
+package createBeans.stereotype_annotation;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

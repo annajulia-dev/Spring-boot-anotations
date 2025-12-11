@@ -1,4 +1,4 @@
-package bean_annotation;
+package createBeans.bean_annotation;
 
 public class Parrot {
     private String name;
