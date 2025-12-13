@@ -1,19 +1,20 @@
 package wiringBeans.wiringbyparameter;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ProjectConfig {
+public class ProjectConfig2 {
     @Bean
-    public Person person(Parrot parrot2){ // The name of the variable is the name of the bean you want.
-        Person person = new Person();   // With that method you can inject beans created by...
-        person.setName("Giovana");     // stereotype_annotation(@Component) too
+    public Person person(@Qualifier("parrot2") Parrot parrot2){ // it's the same thing but easier to read
+        Person person = new Person();
+        person.setName("Giovana");
         person.setParrot(parrot2);
         return person;
     }
     @Bean
-    public Parrot parrot(){
+    public Parrot parrot1(){
         Parrot parrot = new Parrot();
         parrot.setName("Kika");
         return parrot;

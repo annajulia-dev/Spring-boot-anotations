@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
-        var parrot = context.getBean(Parrot.class);
+        var parrot = context.getBean("parrot",Parrot.class);
         var person = context.getBean(Person.class);
 
 

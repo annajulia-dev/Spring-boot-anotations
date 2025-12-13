@@ -7,11 +7,13 @@ public class Main {
         var context =
                 new AnnotationConfigApplicationContext(GameConfig.class);
 
-        var sword = context.getBean(Sword.class);
+        var knight = context.getBean(Knight.class);
 
-        System.out.println(sword.getType());
+        knight.attack();
 
-        for(String beanName : context.getBeanDefinitionNames())
-        System.out.println(beanName);
+
+
+//        for(String beanName : context.getBeanDefinitionNames())
+//        System.out.println(beanName);
     }
 }
