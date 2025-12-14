@@ -10,7 +10,7 @@ public class Knight {
     private final Weapon weapon;
 
     @Autowired
-    public Knight(@Qualifier("sword1") Weapon weapon){
+    public Knight(@Qualifier("dagger") Weapon weapon){
         this.weapon = weapon;
     }
 
