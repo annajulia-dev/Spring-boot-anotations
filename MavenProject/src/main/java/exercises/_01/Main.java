@@ -9,8 +9,8 @@ public class Main {
 
         var knight = context.getBean(Knight.class);
 
-        knight.attack();
 
+        knight.attack();
 
 
 //        for(String beanName : context.getBeanDefinitionNames())
