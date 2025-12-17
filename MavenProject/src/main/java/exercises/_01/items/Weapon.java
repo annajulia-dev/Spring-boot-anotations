@@ -1,4 +1,4 @@
-package exercises._01;
+package exercises._01.items;
 
 public interface Weapon {
     public String getType();

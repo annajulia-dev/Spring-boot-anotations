@@ -1,12 +1,13 @@
 package exercises._01;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
+import exercises._01.items.Potion;
+import exercises._01.items.Sword;
+import exercises._01.quests.RescueCatQuest;
+import org.springframework.context.annotation.*;
 
 @Configuration
 @ComponentScan(basePackages = "exercises._01")
+@EnableAspectJAutoProxy
 public class GameConfig {
 
     @Bean(name = "magicPotion")
@@ -21,5 +22,9 @@ public class GameConfig {
         var sword = new Sword();
         sword.setType("SuperNova");
         return sword;
+    }
+    @Bean
+    public RescueCatQuest catQuest(){
+        return new RescueCatQuest();
     }
 }

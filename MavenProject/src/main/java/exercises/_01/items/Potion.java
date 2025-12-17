@@ -1,4 +1,4 @@
-package exercises._01;
+package exercises._01.items;
 
 
 public class Potion {

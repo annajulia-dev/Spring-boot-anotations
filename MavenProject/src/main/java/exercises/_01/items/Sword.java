@@ -1,4 +1,4 @@
-package exercises._01;
+package exercises._01.items;
 
 import org.springframework.stereotype.Component;
 
