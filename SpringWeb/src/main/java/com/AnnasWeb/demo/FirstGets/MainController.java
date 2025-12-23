@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class MainController {
 
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
-
     @RequestMapping("/home")  //request parameters
     public String home(@RequestParam String color,
             Model page){
